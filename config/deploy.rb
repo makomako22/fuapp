@@ -2,8 +2,8 @@
 lock "~> 3.16.0"
 
 # アプリケーションの指定
-set :application, 'レポジトリ名'
-set :repo_url,  'git@github.com:Githubのユーザー名/レポジトリ名.git'
+set :application, 'fuapp'
+set :repo_url,  'git@github.com:makomako22/fuapp.git'
 
 # sharedディレクトリに入れるファイルを指定
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
@@ -11,7 +11,7 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 # SSH接続設定
 set :ssh_options, {
   auth_methods: ['publickey'], 
-  keys: ['~/.ssh/プライベートキーの名前.pem'] 
+  keys: ['~/.ssh/pikawaka.pem'] 
 }
 
 # 保存しておく世代の設定
@@ -19,7 +19,7 @@ set :keep_releases, 5
 
 # rbenvの設定
 set :rbenv_type, :user
-set :rbenv_ruby, 'アプリで使用しているrubyのバージョン'
+set :rbenv_ruby, '2.6.5'
 
 # ここからUnicornの設定
 # Unicornのプロセスの指定

@@ -29,7 +29,7 @@ gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 
 group :production do
-  gem "rails_12factor"
+  gem 'unicorn', '5.4.1'
 end
 
 group :development, :test do

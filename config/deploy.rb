@@ -6,7 +6,7 @@ set :application, 'レポジトリ名'
 set :repo_url,  'git@github.com:Githubのユーザー名/レポジトリ名.git'
 
 # sharedディレクトリに入れるファイルを指定
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"public/uploads}
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 # SSH接続設定
 set :ssh_options, {
